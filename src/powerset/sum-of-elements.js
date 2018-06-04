@@ -1,4 +1,4 @@
-const numSubnets = require("./num-subsets");
+const numSubsets = require("./num-subsets");
 
 const sumOfElements = x => {
   if (x === 1) {
@@ -6,7 +6,7 @@ const sumOfElements = x => {
   } else {
     const xMinusOne = x - 1;
 
-    return sumOfElements(xMinusOne) * 2 + numSubnets(xMinusOne) * x;
+    return sumOfElements(xMinusOne) * 2 + numSubsets(xMinusOne) * x;
   }
 };
 
